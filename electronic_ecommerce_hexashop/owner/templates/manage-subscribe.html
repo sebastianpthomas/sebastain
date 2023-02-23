@@ -1,0 +1,54 @@
+{%extends 'dashboard.html'%}
+{%block body %}
+{%if messages%}
+{%for message in messages%}
+<div class="alert alert-success" role="alert">{{message}}</div>
+{%endfor%}
+{%endif%}
+<!-- Content wrapper -->
+<div class="content-wrapper">
+<!-- Content -->
+<div class="container-xxl flex-grow-1 container-p-y">
+<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Subscription /</span> Manage Subscription </h4>
+<br>
+<br>
+<a href="{%url 'dashboard'%}" class="btn btn-success">Go Back</a>
+
+{%if subscribe%} 
+<!-- Basic Bootstrap Table -->
+<div class="card">
+<h5 class="card-header"><strong>Subscription Details</strong></h5>
+<div class="table-responsive text-nowrap">  
+<table class="table">
+<thead>
+  <tr>
+    <th><strong>Email</strong></th>
+
+  </tr>
+</thead>
+{%for subscribe in subscribe%}
+<tbody class="table-border-bottom-0">
+  <tr>
+    <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>{{subscribe.email}}</strong></td>
+   
+    <!-- <td>
+     
+         
+      </div>
+      </div>
+    </td> -->
+  </tr>
+  {%endfor%}
+</tbody>
+</table>
+</div>
+</div>
+<!--/ Basic Bootstrap Table -->
+{%else%}
+    <div class="py-5">
+        <div class="row justify-content-center mb-3">
+          <center><strong>Sorry! No Subscriptions found at the moment</strong></center>
+        </div>
+    </div>
+{%endif%}
+{%endblock%}

@@ -1,0 +1,259 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+{% block title %} {% trans 'Checkout' %} {% endblock %}
+{% block body %}
+
+  <!--================Home Banner Area =================-->
+  <!-- breadcrumb start-->
+
+  <!-- breadcrumb start-->
+
+  <!--================Checkout Area =================-->
+  <section class="checkout_area padding_top">
+    <div class="container">
+      <!-- <div class="returning_customer">
+        <div class="check_title">
+          <h2>
+            Returning Customer?
+            <a href="#">Click here to login</a>
+          </h2>
+        </div>
+        <p>
+          If you have shopped with us before, please enter your details in the
+          boxes below. If you are a new customer, please proceed to the
+          Billing & Shipping section.
+        </p>
+        <form class="row contact_form" action="#" method="post" novalidate="novalidate">
+          <div class="col-md-6 form-group p_star">
+            <input type="text" class="form-control" id="name" name="name" value=" " />
+            <span class="placeholder" data-placeholder="Username or Email"></span>
+          </div>
+          <div class="col-md-6 form-group p_star">
+            <input type="password" class="form-control" id="password" name="password" value="" />
+            <span class="placeholder" data-placeholder="Password"></span>
+          </div>
+          <div class="col-md-12 form-group">
+            <button type="submit" value="submit" class="btn_3">
+              log in
+            </button>
+            <div class="creat_account">
+              <input type="checkbox" id="f-option" name="selector" />
+              <label for="f-option">Remember me</label>
+            </div>
+            <a class="lost_pass" href="#">Lost your password?</a>
+          </div>
+        </form>
+      </div> -->
+      <!-- <div class="cupon_area">
+        <div class="check_title">
+          <h2>
+            Have a coupon?
+            <a href="#">Click here to enter your code</a>
+          </h2>
+        </div>
+        <input type="text" placeholder="Enter coupon code" />
+        <a class="tp_btn" href="#">Apply Coupon</a>
+      </div> -->
+      <div class="billing_details">
+        <div class="row">
+          <div class="col-lg-8">
+
+            {%if profile_details%}
+{%for profile in profile_details%}
+
+            
+<h3>{% trans 'Profile Details' %}</h3>
+<form class="row contact_form" action="" method="post" >
+    {%csrf_token%}
+    <div class="col-md-6 form-group ">
+        <input type="text" disabled class="form-control" required  name="first_name" placeholder="{{profile.first_name}}" />
+        <span class="placeholder" placeholder="First name"></span>
+    </div>
+    <div class="col-md-6 form-group ">
+        <input type="text" disabled class="form-control" required id="last_name" name="last_name" placeholder="{{profile.last_name}}"/>
+        <span class="placeholder" placeholder="Last name"></span>
+    </div>
+    <!-- <div class="col-md-12 form-group">
+        <input type="text" class="form-control" id="company" name="company"
+            placeholder="Company name" />
+    </div> -->
+    <div class="col-md-6 form-group ">
+        <input type="text" disabled class="form-control" required id="phone" name="phone" placeholder="{{profile.phone}}" />
+        <span class="placeholder" placeholder="Phone number"></span>
+    </div>
+    <div class="col-md-6 form-group ">
+        <input type="email" disabled class="form-control" required id="email" name="email" placeholder="{{profile.email}}"/>
+        <span class="placeholder" placeholder="Email Address"></span>
+    </div>
+    <!-- <div class="col-md-12 form-group ">
+        <select class="country_select"> -->
+            <!-- <option value="1">Country</option>
+<option value="2">Country</option>
+<option value="4">Country</option> -->
+        <!-- </select>
+    </div> -->
+    <div class="col-md-12 form-group ">
+        <input type="text" disabled class="form-control" required id="add_1" name="add_1" placeholder="{{profile.add_1}}" />
+        <span class="placeholder" placeholder="Address line 01"></span>
+    </div>
+    <div class="col-md-12 form-group ">
+        <input type="text" disabled class="form-control" required id="add_2" name="add_2" placeholder="{{profile.add_2}}" />
+        <span class="placeholder"placeholder="Address line 02"></span>
+    </div>
+    <div class="col-md-12 form-group ">
+        <input type="text" disabled class="form-control" required id="city" name="city" placeholder="{{profile.city}}"/>
+        <span class="placeholder" placeholder="Town/City"></span>
+    </div>
+    <div class="col-md-12 form-group ">
+        <input type="text" disabled class="form-control" required id="country" name="country" placeholder="{{profile.country}}" />
+        <span class="placeholder" placeholder="Country"></span>
+    </div>
+    <!-- <div class="col-md-12 form-group "> -->
+        <!-- <select class="country_select"> -->
+            <!-- <option value="1">District</option>
+<option value="2">District</option>
+<option value="4">District</option> -->
+        <!-- </select> -->
+    <!-- </div> -->
+    <div class="col-md-12 form-group">
+        <input type="text" disabled class="form-control" required id="zip_code" name="zip_code" placeholder="{{profile.zip_code}}" />
+    </div>
+    {% endfor %}
+    
+              <!-- <div class="col-md-12 form-group">
+                <div class="creat_account">
+                  <input type="checkbox" id="f-option2" name="selector" />
+                  <label for="f-option2">Create an account?</label>
+                </div>
+              </div> -->
+              {% else %}
+              <center> <h2 style="margin-bottom: 30px;">Create your profile before payment !!!</h2></center>
+              <center><a href="{% url 'my-profile' %}"  class="btn btn-success">Create Profile </a></center>
+              {% endif %}
+              <!-- <div class="col-md-12 form-group">
+                <div class="creat_account">
+                  <h3>{% trans 'Shipping Details' %}</h3> -->
+                  <!-- <input type="checkbox" id="f-option3" name="selector" />
+                  <label for="f-option3">Ship to a different address?</label> -->
+                <!-- </div>
+                <textarea class="form-control" name="message" id="message" rows="1"
+                  placeholder="Order Notes"></textarea>
+              </div> -->
+            </form>
+          </div>
+          <div class="col-lg-4">
+            <div class="order_box">
+              <h2>{% trans 'Your Order' %}</h2>
+              <ul class="list">
+                <li>
+                  <a href="">{% trans 'Product' %}
+                    
+                    <span>{% trans 'Total' %}</span>
+                  </a>
+                </li>
+                {% for product in cart_items %}
+                <li>
+                  <a href="{% url 'shopdetail' product.product.id%}">{{product.product.name}}
+                    <span class="middle">x {{product.quantity}}</span>
+                    <span class="last">${{product.sub_total}}</span>
+                  </a>
+                </li>
+               {% endfor %}
+                
+              </ul>
+              <ul class="list list_2">
+                <!-- <li>
+                  <a href="#">Subtotal
+                    <span>${{total}}</span>
+                  </a>
+                </li> -->
+                <li>
+                  <a href="#">{% trans 'Shipping' %}
+                    <span>Flat rate: $50.00</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">{% trans 'Total' %}
+                    <span>${{total}}</span>
+                  </a>
+                </li>
+              </ul>
+
+
+
+              
+              <!-- <div class="payment_item">
+                <div class="radion_btn">
+                  <input type="radio" id="f-option5" name="selector" />
+                  <label for="f-option5">Check payments</label>
+                  <div class="check"></div>
+                </div>
+                <p>
+                  Please send a check to Store Name, Store Street, Store Town,
+                  Store State / County, Store Postcode.
+                </p>
+              </div> -->
+              <!-- <div class="payment_item active">
+                <div class="radion_btn">
+                  <input type="radio" id="f-option6" name="selector" />
+                  <label for="f-option6">Paypal </label>
+                  <img src="img/product/single-product/card.jpg" alt="" />
+                  <div class="check"></div>
+                </div>
+                <p>
+                  Please send a check to Store Name, Store Street, Store Town,
+                  Store State / County, Store Postcode.
+                </p>
+              </div> -->
+              <div class="creat_account">
+                <input type="checkbox" id="f-option4" required name="selector" />
+                <label for="f-option4">{% trans 'I’ve read and accept the' %} </label>
+                <a href="#">{% trans 'terms & conditions' %}*</a>
+              </div>
+              {% csrf_token %}
+              {% if profile_details%}
+              <button type="button"  id="checkout-button" class="btn_3">{% trans 'Proceed to Payment' %}</button>
+              {% endif %}
+              <script src="https://js.stripe.com/v3/"></script>           
+              <script type="text/javascript">
+                const csrftoken = document.querySelector('[name=csrfmiddlewaretoken]').value;
+                // Create an instance of the Stripe object with your publishable API key
+                var stripe = Stripe("{{ STRIPE_PUBLIC_KEY }}");
+                var checkoutButton = document.getElementById("checkout-button");
+                checkoutButton.addEventListener("click", function () {
+                  fetch("{% url 'create-checkout-session' %}", {
+                    method: "POST",
+                    headers: {
+                        'X-CSRFToken': csrftoken
+                    }
+                  })
+                    .then(function (response) {
+                      return response.json();
+                    })
+                    .then(function (session) {
+                      return stripe.redirectToCheckout({ sessionId: session.id });
+                    })
+                    .then(function (result) {
+                      // If redirectToCheckout fails due to a browser or network
+                      // error, you should display the localized error message to your
+                      // customer using error.message.
+                      if (result.error) {
+                        alert(result.error.message);
+                      }
+                    })
+                    .catch(function (error) {
+                      console.error("Error:", error);
+                    });
+                });
+            </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--================End Checkout Area =================-->
+
+{% endblock %}
+ 

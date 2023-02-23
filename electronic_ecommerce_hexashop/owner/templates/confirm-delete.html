@@ -1,0 +1,16 @@
+{%extends 'dashboard.html'%}
+{%block body %}
+<div class="">
+    <div class="col-4"></div>
+    <br>
+<br>
+<a href="{%url 'dashboard'%}" class="btn btn-success">Go Back</a>
+    <div class="col-4">
+        <h3>Are you sure?</h3>
+        <form action="" method="post">
+        {%csrf_token%}
+        <button type="submit">Confirm</button>
+    </div>
+    <div class="col-4"></div>
+</div>
+{%endblock%}

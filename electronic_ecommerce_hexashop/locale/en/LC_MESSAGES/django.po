@@ -1,0 +1,393 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-02-20 11:57+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\customer\templates\base.html:54
+msgid "HOME"
+msgstr ""
+
+#: .\customer\templates\base.html:57
+msgid "SHOP"
+msgstr ""
+
+#: .\customer\templates\base.html:60
+msgid "BLOG"
+msgstr ""
+
+#: .\customer\templates\base.html:63
+msgid "CONTACT"
+msgstr ""
+
+#: .\customer\templates\base.html:68
+msgid "LANGUAGE"
+msgstr ""
+
+#: .\customer\templates\base.html:101 .\customer\templates\my-orders.html:16
+#: .\customer\templates\my-orders.html:17
+msgid "My Orders"
+msgstr ""
+
+#: .\customer\templates\base.html:102 .\customer\templates\my-profile.html:4
+#: .\customer\templates\my-profile.html:15
+#: .\customer\templates\my-profile.html:16
+msgid "My Profile"
+msgstr ""
+
+#: .\customer\templates\base.html:103
+msgid "Logout"
+msgstr ""
+
+#: .\customer\templates\base.html:105
+msgid "Dashboard"
+msgstr ""
+
+#: .\customer\templates\base.html:112
+msgid "SIGN IN"
+msgstr ""
+
+#: .\customer\templates\base.html:175
+msgid "Top Products"
+msgstr ""
+
+#: .\customer\templates\base.html:177
+msgid "All Products"
+msgstr ""
+
+#: .\customer\templates\base.html:178
+msgid "Send a message"
+msgstr ""
+
+#: .\customer\templates\base.html:179
+msgid "Our Blogs"
+msgstr ""
+
+#: .\customer\templates\base.html:186
+msgid "Quick Links"
+msgstr ""
+
+#: .\customer\templates\base.html:188 .\customer\templates\blog.html:4
+#: .\customer\templates\blog.html:15 .\customer\templates\blog.html:16
+msgid "Blogs"
+msgstr ""
+
+#: .\customer\templates\base.html:189 .\customer\templates\contact.html:4
+#: .\customer\templates\contact.html:16
+msgid "Contact us"
+msgstr ""
+
+#: .\customer\templates\base.html:190 .\customer\templates\base.html:210
+#: .\customer\templates\shop.html:4
+msgid "Shop"
+msgstr ""
+
+#: .\customer\templates\base.html:208
+msgid "Resources"
+msgstr ""
+
+#: .\customer\templates\base.html:211
+msgid "Products"
+msgstr ""
+
+#: .\customer\templates\base.html:219
+msgid "Our Company"
+msgstr ""
+
+#: .\customer\templates\base.html:222
+msgid "Saudi Arabia, Jeddah"
+msgstr ""
+
+#: .\customer\templates\base.html:247
+msgid "Copyright"
+msgstr ""
+
+#: .\customer\templates\base.html:247
+msgid "All rights reserved | Developed by"
+msgstr ""
+
+#: .\customer\templates\blog.html:16 .\customer\templates\cart.html:17
+#: .\customer\templates\checkout.html:16 .\customer\templates\contact.html:17
+#: .\customer\templates\my-orders.html:17
+#: .\customer\templates\my-profile.html:16 .\customer\templates\shop.html:16
+#: .\customer\templates\wishlist.html:17
+msgid "Home"
+msgstr ""
+
+#: .\customer\templates\blog.html:186
+msgid "Category"
+msgstr ""
+
+#: .\customer\templates\blog.html:331
+msgid "No blogs found at the moment"
+msgstr ""
+
+#: .\customer\templates\cart.html:4
+msgid "Cart"
+msgstr ""
+
+#: .\customer\templates\cart.html:16 .\customer\templates\cart.html:17
+msgid "Cart Products"
+msgstr ""
+
+#: .\customer\templates\cart.html:35 .\customer\templates\checkout.html:146
+#: .\customer\templates\my-orders.html:35
+msgid "Product"
+msgstr ""
+
+#: .\customer\templates\cart.html:36 .\customer\templates\my-orders.html:36
+msgid "Price"
+msgstr ""
+
+#: .\customer\templates\cart.html:37 .\customer\templates\my-orders.html:37
+msgid "Quantity"
+msgstr ""
+
+#: .\customer\templates\cart.html:38 .\customer\templates\checkout.html:148
+#: .\customer\templates\checkout.html:173
+#: .\customer\templates\my-orders.html:38
+msgid "Total"
+msgstr ""
+
+#: .\customer\templates\cart.html:146
+msgid "Subtotal"
+msgstr ""
+
+#: .\customer\templates\cart.html:196
+msgid "Continue Shopping"
+msgstr ""
+
+#: .\customer\templates\cart.html:197
+msgid "Proceed to checkout"
+msgstr ""
+
+#: .\customer\templates\cart.html:203
+msgid "Your Cart is empty"
+msgstr ""
+
+#: .\customer\templates\cart.html:204 .\customer\templates\my-orders.html:205
+#: .\customer\templates\wishlist.html:197
+#: .\customer\templates\wishlist.html:211
+msgid "Continue shopping"
+msgstr ""
+
+#: .\customer\templates\checkout.html:4
+msgid "Checkout"
+msgstr ""
+
+#: .\customer\templates\checkout.html:15
+msgid "Product Checkout"
+msgstr ""
+
+#: .\customer\templates\checkout.html:16
+msgid " Checkout"
+msgstr ""
+
+#: .\customer\templates\checkout.html:74
+msgid "Billing Details"
+msgstr ""
+
+#: .\customer\templates\checkout.html:132
+msgid "Shipping Details"
+msgstr ""
+
+#: .\customer\templates\checkout.html:143
+msgid "Your Order"
+msgstr ""
+
+#: .\customer\templates\checkout.html:168
+msgid "Shipping"
+msgstr ""
+
+#: .\customer\templates\checkout.html:207
+msgid "I’ve read and accept the"
+msgstr ""
+
+#: .\customer\templates\checkout.html:208
+msgid "terms & conditions"
+msgstr ""
+
+#: .\customer\templates\checkout.html:211
+msgid "Proceed to Payment"
+msgstr ""
+
+#: .\customer\templates\contact.html:17
+msgid "contact us"
+msgstr ""
+
+#: .\customer\templates\contact.html:75
+msgid "Get in Touch"
+msgstr ""
+
+#: .\customer\templates\contact.html:117
+msgid "Saudi Arabia , Jeddah"
+msgstr ""
+
+#: .\customer\templates\contact.html:118
+msgid "Street, No"
+msgstr ""
+
+#: .\customer\templates\contact.html:125
+msgid "Mon to Fri"
+msgstr ""
+
+#: .\customer\templates\contact.html:132
+msgid "Send us your query anytime"
+msgstr ""
+
+#: .\customer\templates\index.html:18 .\customer\templates\index.html:50
+msgid "Wood & Cloth"
+msgstr ""
+
+#: .\customer\templates\index.html:19 .\customer\templates\index.html:35
+#: .\customer\templates\index.html:51
+msgid "Sofa"
+msgstr ""
+
+#: .\customer\templates\index.html:20 .\customer\templates\index.html:36
+#: .\customer\templates\index.html:52
+msgid ""
+"A sofa sets the tone of your living space, it is the anchor piece around "
+"which you set up the rest of the elements of the house. The design of the "
+"sofa defines you as a person and so are the other pieces arranged around it"
+msgstr ""
+
+#: .\customer\templates\index.html:21 .\customer\templates\index.html:37
+#: .\customer\templates\index.html:53
+msgid "buy now"
+msgstr ""
+
+#: .\customer\templates\index.html:34
+msgid "Cloth & Wood"
+msgstr ""
+
+#: .\customer\templates\index.html:157
+msgid "Featured Category"
+msgstr ""
+
+#: .\customer\templates\index.html:191 .\customer\templates\index.html:250
+msgid "NO featured products"
+msgstr ""
+
+#: .\customer\templates\index.html:205
+msgid "Featured Products"
+msgstr ""
+
+#: .\customer\templates\index.html:265
+msgid "Weekly Sale on"
+msgstr ""
+
+#: .\customer\templates\index.html:266
+msgid "60"
+msgstr ""
+
+#: .\customer\templates\index.html:266
+msgid "Off All Products"
+msgstr ""
+
+#: .\customer\templates\index.html:356
+msgid "Join Our Newsletter"
+msgstr ""
+
+#: .\customer\templates\index.html:357
+msgid "Subscribe to get Updated with new offers"
+msgstr ""
+
+#: .\customer\templates\loginpage.html:4
+msgid "Login"
+msgstr ""
+
+#: .\customer\templates\loginpage.html:15
+msgid "Login To continue"
+msgstr ""
+
+#: .\customer\templates\loginpage.html:35
+msgid "LOGIN"
+msgstr ""
+
+#: .\customer\templates\loginpage.html:42
+msgid "Username"
+msgstr ""
+
+#: .\customer\templates\loginpage.html:51
+msgid "Password"
+msgstr ""
+
+#: .\customer\templates\loginpage.html:67
+msgid "Sign up"
+msgstr ""
+
+#: .\customer\templates\loginpage.html:70
+msgid "Forgot password"
+msgstr ""
+
+#: .\customer\templates\my-orders.html:4
+msgid "My orders"
+msgstr ""
+
+#: .\customer\templates\my-orders.html:203
+msgid "You dont have made any orders"
+msgstr ""
+
+#: .\customer\templates\my-profile.html:31
+msgid "Profile Details"
+msgstr ""
+
+#: .\customer\templates\my-profile.html:103
+msgid "Update"
+msgstr ""
+
+#: .\customer\templates\my-profile.html:104
+#: .\customer\templates\my-profile.html:233
+msgid "Go Back"
+msgstr ""
+
+#: .\customer\templates\my-profile.html:161
+msgid "Create Your Profile Here"
+msgstr ""
+
+#: .\customer\templates\shop.html:15 .\customer\templates\shop.html:16
+msgid "Shop Category"
+msgstr ""
+
+#: .\customer\templates\shop.html:33
+msgid "Browse Categories"
+msgstr ""
+
+#: .\customer\templates\shop.html:237
+msgid "No products available"
+msgstr ""
+
+#: .\customer\templates\wishlist.html:4
+msgid "Wishlist"
+msgstr ""
+
+#: .\customer\templates\wishlist.html:16 .\customer\templates\wishlist.html:17
+msgid "Wishlist Products"
+msgstr ""
+
+#: .\customer\templates\wishlist.html:209
+msgid "Your Wishlist is Empty"
+msgstr ""
+
+#: .\furniture\settings.py:159
+msgid "English"
+msgstr ""
+
+#: .\furniture\settings.py:160
+msgid "Arabic"
+msgstr ""

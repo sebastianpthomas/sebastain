@@ -1,0 +1,500 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+{% block title %} Home {% endblock %}
+{% block body %}
+
+    <!-- ***** Main Banner Area Start ***** -->
+    <div class="main-banner" id="top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="left-content">
+                        <div class="thumb">
+                            <div class="inner-content">
+                                <h4>We Are Hexashop</h4>
+                                <span>Awesome, We Are Hexashop</span>
+                                <div class="main-border-button">
+                                    <a href="#">Purchase Now!</a>
+                                </div>
+                            </div>
+                            <img src="{% static 'images/left-banner-image.jpg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="right-content">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="right-first-image">
+                                    <div class="thumb">
+                                        <div class="inner-content">
+                                            <h4>Computers</h4>
+                                            <span>Best selling computers</span>
+                                        </div>
+                                        <div class="hover-content">
+                                            <div class="inner">
+                                                <h4>Computers</h4>
+                                                <p>Lorem ipsum dolor sit amet, conservisii ctetur adipiscing elit incid.</p>
+                                                <div class="main-border-button">
+                                                    <a href="#">Discover More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img src="{% static 'images/baner-right-image-01.jpg' %}">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="right-first-image">
+                                    <div class="thumb">
+                                        <div class="inner-content">
+                                            <h4>Cameras</h4>
+                                            <span>Capture your life</span>
+                                        </div>
+                                        <div class="hover-content">
+                                            <div class="inner">
+                                                <h4>Cameras</h4>
+                                                <p>Lorem ipsum dolor sit amet, conservisii ctetur adipiscing elit incid.</p>
+                                                <div class="main-border-button">
+                                                    <a href="#">Discover More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img src="{% static 'images/baner-right-image-02.jpg' %}">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="right-first-image">
+                                    <div class="thumb">
+                                        <div class="inner-content">
+                                            <h4>Accessories</h4>
+                                            <span>Top selling Accessories</span>
+                                        </div>
+                                        <div class="hover-content">
+                                            <div class="inner">
+                                                <h4>Accessories</h4>
+                                                <p>Lorem ipsum dolor sit amet, conservisii ctetur adipiscing elit incid.</p>
+                                                <div class="main-border-button">
+                                                    <a href="#">Discover More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img src="{% static 'images/baner-right-image-03.jpg' %}">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="right-first-image">
+                                    <div class="thumb">
+                                        <div class="inner-content">
+                                            <h4>Computers</h4>
+                                            <span>Best Trend Accessories</span>
+                                        </div>
+                                        <div class="hover-content">
+                                            <div class="inner">
+                                                <h4>Computers</h4>
+                                                <p>Lorem ipsum dolor sit amet, conservisii ctetur adipiscing elit incid.</p>
+                                                <div class="main-border-button">
+                                                    <a href="#">Discover More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img src="{% static 'images/baner-right-image-04.jpg' %}">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Main Banner Area End ***** -->
+    <!-- banner part start-->
+    <section class="banner_part">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <div class="banner_slider owl-carousel">
+                        <div class="single_banner_slider">
+                            <div class="row">
+                                <div class="col-lg-5 col-md-8">
+                                    <div class="banner_text">
+                                        <div class="banner_text_iner">
+                                            <h1>{% trans 'Wood & Cloth' %}
+                                                {% trans 'Sofa' %}</h1>
+                                            <p>{% trans 'A sofa sets the tone of your living space, it is the anchor piece around which you set up the rest of the elements of the house. The design of the sofa defines you as a person and so are the other pieces arranged around it' %}</p>
+                                            <a href="{% url 'shop' %}" class="btn_2">{% trans 'buy now' %}</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="banner_img d-none d-lg-block">
+                                    <img src="{% static 'img/banner_img.png' %}" alt="">
+                                </div>
+                            </div>
+                        </div><div class="single_banner_slider">
+                            <div class="row">
+                                <div class="col-lg-5 col-md-8">
+                                    <div class="banner_text">
+                                        <div class="banner_text_iner">
+                                            <h1>{% trans 'Cloth & Wood' %}
+                                                {% trans 'Sofa' %}</h1>
+                                            <p>{% trans 'A sofa sets the tone of your living space, it is the anchor piece around which you set up the rest of the elements of the house. The design of the sofa defines you as a person and so are the other pieces arranged around it' %}</p>
+                                            <a href="{% url 'shop' %}" class="btn_2">{% trans 'buy now' %}</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="banner_img d-none d-lg-block">
+                                    <img src="{% static 'img/banner_img.png' %}" alt="">
+                                </div>
+                            </div>
+                        </div><div class="single_banner_slider">
+                            <div class="row">
+                                <div class="col-lg-5 col-md-8">
+                                    <div class="banner_text">
+                                        <div class="banner_text_iner">
+                                            <h1>{% trans 'Wood & Cloth' %}
+                                                {% trans 'Sofa' %}</h1>
+                                            <p>{% trans 'A sofa sets the tone of your living space, it is the anchor piece around which you set up the rest of the elements of the house. The design of the sofa defines you as a person and so are the other pieces arranged around it' %}</p>
+                                            <a href="{% url 'shop' %}" class="btn_2">{% trans 'buy now' %}</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="banner_img d-none d-lg-block">
+                                    <img src="{% static 'img/banner_img.png' %}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="single_banner_slider">
+                            <div class="row">
+                                <div class="col-lg-5 col-md-8">
+                                    <div class="banner_text">
+                                        <div class="banner_text_iner">
+                                            <h1>Cloth $ Wood Sofa</h1>
+                                            <p>Incididunt ut labore et dolore magna aliqua quis ipsum
+                                                suspendisse ultrices gravida. Risus commodo viverra</p>
+                                            <a href="#" class="btn_2">buy now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="banner_img d-none d-lg-block">
+                                    <img src="img/banner_img.png" alt="">
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="slider-counter"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner part start-->
+
+
+
+
+{% comment %}
+    <!-- feature_part start-->
+    {%if category %}
+    <section class="feature_part padding_top">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section_tittle text-center">
+                        <h2>Featured Category</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-between">
+            {%for cat in category%}
+                <div class="col-lg-4 col-sm-4">
+                    <div class="single_feature_post_text" >
+                        <p>{{cat.desc}}</p>
+                        <h3>{{cat.name}}</h3>
+                        <a href="{% url 'category-view' cat.id%}" class="feature_btn">EXPLORE NOW <i class="fas fa-play"></i></a>
+                        <img style="width:200px;height: 200px;" src="{{cat.image.url}}" alt="">
+                    </div>
+                </div>
+            {%endfor%}
+
+                <!-- <div class="col-lg-5 col-sm-6">
+                    <div class="single_feature_post_text">
+                        <p>Premium Quality</p>
+                        <h3>Latest foam Sofa</h3>
+                        <a href="#" class="feature_btn">EXPLORE NOW <i class="fas fa-play"></i></a>
+                        <img src="{% static 'img/feature/feature_2.png' %}" alt="">
+                    </div>
+                </div> -->
+                <!-- <div class="col-lg-5 col-sm-6">
+                    <div class="single_feature_post_text">
+                        <p>Premium Quality</p>
+                        <h3>Latest foam Sofa</h3>
+                        <a href="#" class="feature_btn">EXPLORE NOW <i class="fas fa-play"></i></a>
+                        <img src="{% static 'img/feature/feature_3.png' %}" alt="">
+                    </div>
+                </div> -->
+                <!-- <div class="col-lg-7 col-sm-6">
+                    <div class="single_feature_post_text">
+                        <p>Premium Quality</p>
+                        <h3>Latest foam Sofa</h3>
+                        <a href="#" class="feature_btn">EXPLORE NOW <i class="fas fa-play"></i></a>
+                        <img src="{% static 'img/feature/feature_4.png' %}" alt="">
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    {%else%}
+    <diV>No Category available</diV>
+    {% endif %}
+    <!-- upcoming_event part start-->
+    {% endcomment %}
+
+
+  <!-- product_list start-->
+  {%if category %}
+
+  <section class="product_list section_padding">
+      <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-lg-12">
+                  <div class="section_tittle text-center">
+                      <h2>{% trans 'Featured Category' %} <span></span></h2>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-lg-12">
+                  <div class="">
+                      <div class="single_product_list_slider">
+
+                          <div class="row align-items-center justify-content-between">
+                            {%for cat in category%}
+
+                              <div class="col-lg-3 col-sm-6">
+                                  <div class="single_product_item">
+                                      <a href="{% url 'category-view' cat.id%}"> <img style="width:200%;height:150px;" src="{{cat.image.url}}" alt=""></a>
+                                      <div class="single_product_text">
+                                        <a href="{% url 'category-view' cat.id%}"><strong>{{cat.name}}</strong></a>
+                                          <h3>{{cat.desc}}</h3>
+                                          <!-- <a href="#" class="add_cart">+ add to cart<i class="ti-heart"></i></a> -->
+                                      </div>
+                                  </div>
+                              </div>
+                              {%endfor%}
+
+
+                          </div>
+                      </div>
+
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  {%else%}
+  <div><center><h2>{% trans 'NO featured products' %}</h2></center></div>
+  {%endif%}
+
+
+
+
+
+    <!-- product_list start-->
+    {%if featured%}
+    <section class="product_list section_padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="section_tittle text-center">
+                        <h2>{% trans 'Featured Products' %} <span></span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="">
+                        <div class="single_product_list_slider">
+
+                            <div class="row align-items-center justify-content-between">
+                            {%for fea in featured%}
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="single_product_item">
+                                        <a href="{% url 'shopdetail' fea.id%}"> <img style="width:100%;height:300px;" src="{{fea.image_1.url}}" alt=""></a>
+                                        <div class="single_product_text">
+                                            <a href="{% url 'shopdetail' fea.id%}"><strong>{{fea.name}}</strong></a>
+                                            <h3>${{fea.price}}</h3>
+                                            <table>
+                                                <tr>
+                                            <th>
+                                                <a href="{% url 'add-to-cart' fea.id%}" class="add_cart">+ add to cart</a>
+
+                                            </th>
+                                            <th>
+                                            <a href="{% url 'add-wishlist' fea.id%}" class="like_us" style="margin-left: 20px;"> <i class="ti-heart"></i> </a>
+
+                                            </th>
+
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                {%endfor%}
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {%else%}
+    <div><center><h2>{% trans 'NO featured products' %}</h2></center></div>
+    {%endif%}
+    <!-- product_list part start-->
+
+    <!-- awesome_shop start-->
+    <section class="our_offer section_padding">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-lg-6 col-md-6">
+                    <div class="offer_img">
+                        <img src="{% static 'images/shop03.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="offer_text">
+                        <h2>{% trans 'Weekly Sale on' %}
+                            {% trans '60' %}% {% trans 'Off All Products' %}</h2>
+                        <!-- <div class="date_countdown">
+                            <div id="timer">
+                                <div id="days" class="date"></div>
+                                <div id="hours" class="date"></div>
+                                <div id="minutes" class="date"></div>
+                                <div id="seconds" class="date"></div>
+                            </div>
+                        </div> -->
+                        <!-- <div class="input-group">
+                            <form action="" method="post">
+                                {% csrf_token %}
+                            <input type="text" class="form-control" required placeholder="enter email address"
+                                aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <input type="submit" value="Submit" id="basic-addon2">book now</a>
+                            </div>
+                        </form>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- awesome_shop part start-->
+
+    <!-- product_list part start-->
+    {%comment%}
+    <section class="product_list best_seller section_padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="section_tittle text-center">
+                        <h2>Best Sellers <span>shop</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-between">
+                <div class="col-lg-12">
+                    <div class="best_product_slider owl-carousel">
+                        <div class="single_product_item">
+                            <img src="{% static 'img/product/product_1.png' %}" alt="">
+                            <div class="single_product_text">
+                                <h4>Quartz Belt Watch</h4>
+                                <h3>$150.00</h3>
+                            </div>
+                        </div>
+                        <!-- <div class="single_product_item">
+                            <img src="{% static 'img/product/product_2.png' %}" alt="">
+                            <div class="single_product_text">
+                                <h4>Quartz Belt Watch</h4>
+                                <h3>$150.00</h3>
+                            </div>
+                        </div> -->
+                        <!-- <div class="single_product_item">
+                            <img src="{% static 'img/product/product_3.png' %}" alt="">
+                            <div class="single_product_text">
+                                <h4>Quartz Belt Watch</h4>
+                                <h3>$150.00</h3>
+                            </div>
+                        </div> -->
+                        <!-- <div class="single_product_item">
+                            <img src="{% static 'img/product/product_4.png' %}" alt="">
+                            <div class="single_product_text">
+                                <h4>Quartz Belt Watch</h4>
+                                <h3>$150.00</h3>
+                            </div>
+                        </div>
+                        <div class="single_product_item">
+                            <img src="{% static 'img/product/product_5.png' %}" alt="">
+                            <div class="single_product_text">
+                                <h4>Quartz Belt Watch</h4>
+                                <h3>$150.00</h3>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {%endcomment%}
+    <!-- product_list part end-->
+
+
+
+    {% comment %}
+    <!-- subscribe_area part start-->
+    <section class="client_logo padding_top">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <div class="single_client_logo">
+                        <img src="{% static 'img/client_logo/client_logo_1.png' %}" alt="">
+                    </div>
+                    <div class="single_client_logo">
+                        <img src="{% static 'img/client_logo/client_logo_2.png' %}" alt="">
+                    </div>
+                    <div class="single_client_logo">
+                        <img src="{% static 'img/client_logo/client_logo_3.png' %}" alt="">
+                    </div>
+                    <div class="single_client_logo">
+                        <img src="{% static 'img/client_logo/client_logo_4.png' %}" alt="">
+                    </div>
+                    <div class="single_client_logo">
+                        <img src="{% static 'img/client_logo/client_logo_5.png' %}" alt="">
+                    </div>
+                    <div class="single_client_logo">
+                        <img src="{% static 'img/client_logo/client_logo_3.png' %}" alt="">
+                    </div>
+                    <div class="single_client_logo">
+                        <img src="{% static 'img/client_logo/client_logo_1.png' %}" alt="">
+                    </div>
+                    <div class="single_client_logo">
+                        <img src="{% static 'img/client_logo/client_logo_2.png' %}" alt="">
+                    </div>
+                    <div class="single_client_logo">
+                        <img src="{% static 'img/client_logo/client_logo_3.png' %}" alt="">
+                    </div>
+                    <div class="single_client_logo">
+                        <img src="{% static 'img/client_logo/client_logo_4.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--::subscribe_area part end::-->
+{% endcomment %}
+  {% endblock %}
